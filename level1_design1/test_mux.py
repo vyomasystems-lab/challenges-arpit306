@@ -18,5 +18,5 @@ async def test_mux(dut):
 
     await Timer(2, units='ns')
 
-    cocotb.log.info(f'input12={input12:0b00} select={select:0b01100} DUT:{dut.out.value:0b00}')
+    #cocotb.log.info(f'input12={input12:0b00} select={select:0b01100} DUT:{dut.out.value:0b00}')
     assert dut.out.value == 0b00, f"Mux output is incorrect: {dut.X.value} != 0b00"

@@ -9,7 +9,7 @@ async def test_mux(dut):
     #test for 12th input
     input12=0b00
     input13=0b10
-    select=0b01100 #12th line
+    select=0b01101 #13th line
 
     #input driving
     dut.inp12.value=input12

@@ -1,3 +1,4 @@
+//this code is written by me, with the resources available in the NPTEL course of System design through VERILOG.
 module CLA(cout,sum,a,b,cin);
 
   output cout;

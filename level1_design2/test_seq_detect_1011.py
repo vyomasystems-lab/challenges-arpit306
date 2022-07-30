@@ -29,7 +29,7 @@ async def test_seq_bug1(dut):
     assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"  
+    assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b0
     dut.inp_bit.value=input          #input driving
     assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"

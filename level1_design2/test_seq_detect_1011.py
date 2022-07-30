@@ -25,27 +25,27 @@ async def test_seq_bug1(dut):
 
     input=0b1
     dut.inp_bit.value=input          #input driving
-    await Timer(12, units='us')
+    #await Timer(12, units='us')
     assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
     
     input=0b1
     dut.inp_bit.value=input          #input driving
-    await Timer(12, units='us')
+    #await Timer(12, units='us')
     assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
        
     input=0b0
     dut.inp_bit.value=input          #input driving
-    await Timer(12, units='us')
+    #await Timer(12, units='us')
     assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
 
     input=0b1
     dut.inp_bit.value=input          #input driving
-    await Timer(12, units='us')
+    #await Timer(12, units='us')
     assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
 
     input=0b1
     dut.inp_bit.value=input          #input driving
-    await Timer(12, units='us')
+    #await Timer(12, units='us')
     assert dut.seq_seen.value == 0b1, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b1"
-    
+
     #cocotb.log.info('#### CTB: Develop your test here! ######')

@@ -114,7 +114,7 @@ async def test_seq_bug4(dut):
     """Test for seq detection """
     
     clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk
-    cocotb.start_soon(clock.start())        # Start the clock
+    cocotb.start_soon(clock.start())         # Start the clock
 
     # reset
     dut.reset.value = 1

@@ -74,7 +74,7 @@ async def test_seq_bug2(dut):
     assert dut.seq_seen.value == 0b1, f"output is incorrect: {dut.seq_seen.value} != 0b1"
 
 @cocotb.test()
-async def test_seq_bug2(dut):
+async def test_seq_bug3(dut):
     """Test for seq detection """
     
     clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk
@@ -110,7 +110,7 @@ async def test_seq_bug2(dut):
     assert dut.seq_seen.value == 0b1, f"output is incorrect: {dut.seq_seen.value} != 0b1"
 
 @cocotb.test()
-async def test_seq_bug2(dut):
+async def test_seq_bug4(dut):
     """Test for seq detection """
     
     clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk

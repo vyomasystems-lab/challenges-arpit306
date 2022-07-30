@@ -26,22 +26,22 @@ async def test_seq_bug1(dut):
                                     #Test for input pattern 11011
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b0
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b1, f"seq_seenput is incorrect: {dut.seq_seen.value} != 0b1"
+    assert dut.seq_seen.value == 0b1, f"output is incorrect: {dut.seq_seen.value} != 0b1"
 
 @cocotb.test()
-async def test_seq_bug1(dut):
+async def test_seq_bug2(dut):
     """Test for seq detection """
     
     clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk
@@ -53,19 +53,22 @@ async def test_seq_bug1(dut):
     dut.reset.value = 0
     await FallingEdge(dut.clk)
 
-                                    #Test for input pattern 11011
+                                    #Test for input pattern 101011
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seen is incorrect: {dut.seq_seen.value} != 0b0"
-    input=0b1
-    dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seen is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b0
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seen is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b0, f"seq_seen is incorrect: {dut.seq_seen.value} != 0b0"
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
+    input=0b0
+    dut.inp_bit.value=input          #input driving
+    assert dut.seq_seen.value == 0b0, f"output is incorrect: {dut.seq_seen.value} != 0b0"
     input=0b1
     dut.inp_bit.value=input          #input driving
-    assert dut.seq_seen.value == 0b1, f"seq_seen is incorrect: {dut.seq_seen.value} != 0b1"
+    assert dut.seq_seen.value == 0b1, f"output is incorrect: {dut.seq_seen.value} != 0b0"
+    input=0b1
+    dut.inp_bit.value=input          #input driving
+    assert dut.seq_seen.value == 0b1, f"output is incorrect: {dut.seq_seen.value} != 0b1"

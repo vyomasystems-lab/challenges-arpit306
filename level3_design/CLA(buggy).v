@@ -10,7 +10,7 @@ module CLA(cout,sum,a,b,cin);
   //stage 1 : (p & g generator)
   assign p[0]=a[0]^b[0],
          p[1]=a[1]^b[1],
-         p[2]=a[2]~^b[2],
+         p[2]=a[2]~^b[2], //bug added to this line
          p[3]=a[3]^b[3];
 
   assign g[0]=a[0]&b[0],

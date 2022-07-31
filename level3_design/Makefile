@@ -7,7 +7,7 @@ PWD=$(shell pwd)
 VERILOG_SOURCES = $(PWD)/CLA(buggy).v               # provide your design path
 
 TOPLEVEL :=CLA(buggy)           # design file
-MODULE   :=     # test file
+MODULE   :=test_CLA     # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 

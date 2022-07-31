@@ -5,7 +5,7 @@
 ![ss](https://user-images.githubusercontent.com/68592620/182046281-7a83b469-d9e3-48ce-86e9-59fcb49111a8.png)  
 ## Level 1 - Design 1  
 **Multiplexer**  
-In this given design we have a 31:1 multiplexer with 5 select lines. Each input & output lines are all a two bit bus signal.  
+In this given design we have a 31:1 multiplexer with 5 select lines. Each input & output lines are all a two bit bus signal.
 The assert statement is used to check whether the observed outut is same as the expected output or not.  
 The following errors 👇 are seen.
 

@@ -59,7 +59,7 @@ def run_test1(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-@cocotb.test()    
+@cocotb.test()
 def run_test2(dut):
 
     # clock

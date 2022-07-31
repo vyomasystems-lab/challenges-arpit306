@@ -104,3 +104,4 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
 endmodule 
 ``` 
 ## Level 1 Design 2
+**1011 overlapping sequence detector**

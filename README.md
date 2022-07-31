@@ -39,7 +39,7 @@ The following errors 👇 are seen.
 ```
   To fix the bug we insert a line of ```5'b11110: out = inp30;``` before ```default: out = 0;```
 
-**Design Fix**
+**DESIGN FIX**
 ```
 module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8, 
            inp9, inp10, inp11, inp12, inp13, inp14, inp15, inp16, inp17,

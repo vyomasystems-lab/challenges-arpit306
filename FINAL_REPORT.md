@@ -15,7 +15,7 @@ The following errors 👇 are seen.
 - Test Inputs: inp12= 0b00, inp13=0b11, sel=0b01101
 - Expected Output: out= 0b11
 - Observed Output in the DUT 0 (default case value ) is not equal to 0b11.  
-  Since the observed output is not equal to the expected output therefore the given design has bugs.
+  Since the observed output is not equal to the expected output therefore the given design has bug.
   
 **BUG 1**
 ```
@@ -25,6 +25,12 @@ The following errors 👇 are seen.
  default: out = 0;
 ```
   To fix the bug replace ```5'b01101: out = inp12;``` with ```5'b01100: out = inp12;```  
+ 
+**Test Scenario 2**  
+- Test Inputs: inp30=0b01, sel=0b11110
+- Expected Output: out= 0b01
+- Observed Output in the DUT 0 (default case value ) is not equal to 0b01.  
+  Since the observed output is not equal to the expected output therefore the given design has bug.
   
 **BUG 2**
 ```
@@ -96,4 +102,4 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
   end
 
 endmodule 
-```
+``` 

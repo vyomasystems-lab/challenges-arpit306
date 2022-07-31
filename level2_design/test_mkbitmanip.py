@@ -97,7 +97,7 @@ def run_test2(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test3(dut):
 
     # clock
@@ -135,7 +135,7 @@ def run_test3(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test4(dut):
 
     # clock
@@ -173,7 +173,7 @@ def run_test4(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test5(dut):
 
     # clock
@@ -211,7 +211,7 @@ def run_test5(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test6(dut):
 
     # clock
@@ -249,7 +249,7 @@ def run_test6(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test7(dut):
 
     # clock
@@ -287,7 +287,7 @@ def run_test7(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test8(dut):
 
     # clock
@@ -325,7 +325,7 @@ def run_test8(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test9(dut):
 
     # clock
@@ -363,7 +363,7 @@ def run_test9(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test10(dut):
 
     # clock
@@ -401,7 +401,7 @@ def run_test10(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test11(dut):
 
     # clock
@@ -439,7 +439,7 @@ def run_test11(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test12(dut):
 
     # clock
@@ -477,7 +477,7 @@ def run_test12(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test13(dut):
 
     # clock
@@ -515,7 +515,7 @@ def run_test13(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test14(dut):
 
     # clock
@@ -553,7 +553,7 @@ def run_test14(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test15(dut):
 
     # clock
@@ -591,7 +591,7 @@ def run_test15(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test16(dut):
 
     # clock
@@ -629,7 +629,7 @@ def run_test16(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test17(dut):
 
     # clock
@@ -667,7 +667,7 @@ def run_test17(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test18(dut):
 
     # clock
@@ -705,7 +705,7 @@ def run_test18(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test19(dut):
 
     # clock
@@ -743,7 +743,7 @@ def run_test19(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test20(dut):
 
     # clock
@@ -781,7 +781,7 @@ def run_test20(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test21(dut):
 
     # clock
@@ -819,7 +819,7 @@ def run_test21(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test22(dut):
 
     # clock
@@ -857,7 +857,7 @@ def run_test22(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test23(dut):
 
     # clock
@@ -895,7 +895,7 @@ def run_test23(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test24(dut):
 
     # clock
@@ -933,7 +933,7 @@ def run_test24(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test25(dut):
 
     # clock
@@ -971,7 +971,7 @@ def run_test25(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test26(dut):
 
     # clock
@@ -1009,7 +1009,7 @@ def run_test26(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message
-    
+@cocotb.test()    
 def run_test27(dut):
 
     # clock

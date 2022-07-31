@@ -14,12 +14,20 @@ The following errors 👇 are seen.
 **Test Scenario 1**  
 - Test Inputs: inp12= 0b00, inp13=0b11, sel=0b01101
 - Expected Output: out= 0b11
-- Observed Output in the DUT is not equal to 0b11.  
+- Observed Output in the DUT 0 (default case value ) is not equal to 0b11.  
   Since the observed output is not equal to the expected output therefore the given design has bugs.
   
 **BUG 1**
 ```
 5'b01011: out = inp11;   
 5'b01101: out = inp12;  => bug [ for 12th input line, select vale corresponding to 13th input is selected ]
-5'b01101: out = inp13;  
+5'b01101: out = inp13;
+ default: out = 0;
+```
+  To fix the bug replace ```5'b01101: out = inp12;``` with ```5'b01100: out = inp12;```  
+  
+**BUG 2**
+```
+5'b11101: out = inp29; 
+ default: out = 0;      => bug [ 30th input not included in case statement ]
 ```

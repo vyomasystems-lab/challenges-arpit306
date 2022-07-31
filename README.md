@@ -20,7 +20,7 @@ The following errors 👇 are seen.
 **BUG 1**
 ```
 5'b01011: out = inp11;   
-5'b01101: out = inp12;  => bug [ for 12th input line, select vale corresponding to 13th input is selected ]
+5'b01101: out = inp12;  => bug [ for 12th input line, select value corresponding to 13th input is selected ]
 5'b01101: out = inp13;
  default: out = 0;
 ```

@@ -7,7 +7,7 @@
 **Multiplexer**  
 In this given design we have a 31:1 multiplexer with 5 select lines. Each input & output line is two bit bus signal.  
 The assert statement is used to check whether the observed outut is same as the expected output or not.  
-The following errors are seen.
+The following errors 👇 are seen.
 
 ![bugs_mux](https://user-images.githubusercontent.com/68592620/182046801-56142189-f087-4744-9271-9bc77367fc8d.png)  
 
@@ -16,3 +16,10 @@ The following errors are seen.
 - Expected Output: out= 0b11
 - Observed Output in the DUT is not equal to 0b11.  
   Since the observed output is not equal to the expected output therefore the given design has bugs.
+  
+**BUG 1**
+```
+5'b01011: out = inp11;   
+5'b01101: out = inp12;  => bug [ for 12th input line, select vale corresponding to 13th input is selected ]
+5'b01101: out = inp13;  
+```

@@ -31,3 +31,4 @@ The following errors 👇 are seen.
 5'b11101: out = inp29; 
  default: out = 0;      => bug [ 30th input not included in case statement ]
 ```
+  To fix the bug we insert a line of ```5'b11110: out = inp30``` before ```default: out = 0;```

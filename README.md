@@ -199,7 +199,7 @@ There are 27 * unmarked instructions in the table above. I converted all those i
        mav_putvalue_src2 = 0x00000000                              
        mav_putvalue_src3 = 0x0446FF8B                              
        mav_putvalue_instr = (all 27 instructions one by one)      
-2.)    mav_putvalue_src1 = (random 32 bit binary number)
-       mav_putvalue_src2 = (random 32 bit binary number)
-       mav_putvalue_src3 = 0x0446FF8B
-        mav_putvalue_instr = (all 27 instructions one by one)  
+2.)    mav_putvalue_src1 = (random 32 bit binary number)  
+       mav_putvalue_src2 = (random 32 bit binary number)  
+       mav_putvalue_src3 = 0x0446FF8B  
+       mav_putvalue_instr = (all 27 instructions one by one)  

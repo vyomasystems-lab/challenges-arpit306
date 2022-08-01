@@ -126,3 +126,28 @@ SEQ_1:
           next_state = SEQ_10;
       end
 ```
+To fix the bug replace ```next_state = IDLE;``` with ```next_state = SEQ_1;```
+
+**Test Scenario 2**  
+- Test Inputs: input sequence = 0b101011
+- Expected Output: sequence seen = 0b00001
+- Observed Output in the DUT is = 0b00000
+  Since the observed output is not equal to the expected output therefore the given design has bug.  
+  
+**BUG 2**  
+```
+ SEQ_101:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1011;
+        else
+          next_state = IDLE;    => bug [ next state should be SEQ_10, in order to detect overlapping sequence ]
+      end
+```
+To fix the bug replace ```next_state = IDLE;``` with ```next_state = SEQ_10;```  
+
+**Test Scenario 3**  
+- Test Inputs: input sequence = 0b101011
+- Expected Output: sequence seen = 0b00001
+- Observed Output in the DUT is = 0b00000
+  Since the observed output is not equal to the expected output therefore the given design has bug.

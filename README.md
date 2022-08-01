@@ -16,7 +16,7 @@ This is the final CTB Hackathon report submitted for final evaluation by Arpit S
 
 ![ss](https://user-images.githubusercontent.com/68592620/182046281-7a83b469-d9e3-48ce-86e9-59fcb49111a8.png)  
 ## ▫️ Level 1 - Design 1  
-**Multiplexer**  
+**[Multiplexer]**  
 In this given design we have a 31:1 multiplexer with 5 select lines. Each input & output line is a two bit bus signal.
 The assert statement is used to check whether the observed output is same as the expected output or not.  
 The following errors 👇 were seen.
@@ -117,7 +117,7 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
 endmodule 
 ``` 
 ## ▫️ Level 1 Design 2
-**1011 Overlapping Sequence Detector**  
+**[1011 Overlapping Sequence Detector]**  
 In this design an overlapping 1011 sequence detector was modelled as an FSM. The modelling style used in the design is an example of Moore FSM, as the output is determined by the current state only. The assert statement is used to check whether the observed output is same as the expected output or not.
 The following errors 👇 were seen.
 
@@ -280,6 +280,7 @@ endmodule
 ```
 
 ## ▫️ Level 2 Design  
+**[Bit-Manipulation Co-Processor]**  
 This design is a complex Bit Manipulation Co-Processor used in a complex microprocessor. This is basically a 32 bit ALU, that takes three 32 bit operands and takes a 32 bit instruction, according to which it generates a 33 bit output, out of which the LSB is the validity bit & the other 32 bits are the output of the operation defined by the instruction. Here we were given the Instruction table, using which the instruction code can be generated to run test cases. Shown below 👇.  
 
 ![ISR](https://user-images.githubusercontent.com/68592620/182141607-ba0ac425-7063-48fc-a9c6-aceb057fa38c.png)
@@ -309,6 +310,7 @@ After running tests for 27 different instrutions, for two different set of input
 According tp the test reports, the code related to the instruction code **0x40007033** which corresponds to the instruction **ANDN contains the bug.** And it should be corrected by the designer, with the knowledge of the design.
 
 ## ▫️ Level 3 Design  
+**[Carry Lookahead Adder]**
 This design, which I have chosen is the design of a 4-Bit Carry Look-Ahead (CLA) Adder. Please refer the Literature Survey Report for more information about the design. I have inserted bug in this design, mentioned below.  
 
 **INSERTED BUG**  

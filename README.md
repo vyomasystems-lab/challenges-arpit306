@@ -173,5 +173,13 @@ To fix the bug replace
       end
 ``` 
 with 
+
 ```
-next_state = SEQ_10;``` 
+ SEQ_1011:
+      begin
+        if(inp_bit==1)
+          next_state = SEQ_1;
+        else
+          next_state = SEQ_10;
+      end
+```

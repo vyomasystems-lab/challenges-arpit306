@@ -3,11 +3,11 @@
 This is the final hackathon report by Arpit Sharma, submitted for evaluation.
 
 ## Table of contents  
-▫️[Abstract](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
-▫️[Level-1_Design-1](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
-▫️[Level-1_Design-2](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
-▫️[Level-2_Design](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
-▫️[Level-3_Design](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)
+▫️[Abstract](https://github.com/vyomasystems-lab/challenges-arpit306#abstract)  
+▫️[Level-1_Design-1](https://github.com/vyomasystems-lab/challenges-arpit306#level-1---design-1)  
+▫️[Level-1_Design-2](https://github.com/vyomasystems-lab/challenges-arpit306#level-1-design-2)  
+▫️[Level-2_Design](https://github.com/vyomasystems-lab/challenges-arpit306#level-2-design)  
+▫️[Level-3_Design](https://github.com/vyomasystems-lab/challenges-arpit306#level-3-design)  
 ## Abstract  
 
 ▫️ This readme file presents the final report for the Capture The Bug CTB Design Verification Hackathon 2020.  

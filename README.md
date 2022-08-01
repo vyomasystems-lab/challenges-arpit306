@@ -187,3 +187,6 @@ with
 This design has bugs due to incorrect next state assignments, in order to detect overlapping 1011 sequences. The correct state transition diagram for a 1011 overlapping sequence detector should be as follows 👇.  
 
 ![FSM](https://user-images.githubusercontent.com/68592620/182138856-a808139b-8196-4874-b837-707cd0d20f7e.jpg)
+
+## Level 2 Design  
+This design is a complex Bit Manipulation Co-Processor used in a complex microprocessor. This is basically a 32 bit ALU, that takes three 32 bit operands and takes a 32 bit instruction, according to which it generates a 33 bit output, out of which the LSB is the validity bit & the other 32 bits are the output of the operation defined by the instruction.

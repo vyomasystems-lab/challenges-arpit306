@@ -41,6 +41,7 @@ The following errors 👇 were seen.
 
 **DESIGN FIX**
 ```
+# corrected code
 module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8, 
            inp9, inp10, inp11, inp12, inp13, inp14, inp15, inp16, inp17,
            inp18, inp19, inp20, inp21, inp22, inp23, inp24, inp25, inp26,
@@ -189,6 +190,7 @@ This design has bugs due to incorrect next state assignments, in order to detect
 ![FSM](https://user-images.githubusercontent.com/68592620/182138856-a808139b-8196-4874-b837-707cd0d20f7e.jpg)
 
 ```
+# corrected code
 module seq_detect_1011(seq_seen, inp_bit, reset, clk);
 
   output seq_seen;

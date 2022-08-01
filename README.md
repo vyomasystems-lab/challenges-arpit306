@@ -310,7 +310,7 @@ After running tests for 27 different instrutions, for two different set of input
 According tp the test reports, the code related to the instruction code **0x40007033** which corresponds to the instruction **ANDN contains the bug.** And it should be corrected by the designer, with the knowledge of the design.
 
 ## ▫️ Level 3 Design  
-**[Carry Lookahead Adder]**
+**[Carry Lookahead Adder]**  
 This design, which I have chosen is the design of a 4-Bit Carry Look-Ahead (CLA) Adder. Please refer the Literature Survey Report for more information about the design. I have inserted bug in this design, mentioned below.  
 
 **INSERTED BUG**  

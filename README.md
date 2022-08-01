@@ -14,7 +14,7 @@ The following errors 👇 are seen.
 **Test Scenario 1**  
 - Test Inputs: inp12= 0b00, inp13=0b11, sel=0b01101
 - Expected Output: out= 0b11
-- Observed Output in the DUT 0 (default case value ) is not equal to 0b11.  
+- Observed Output in the DUT = 0 (default case value ) is not equal to 0b11.  
   Since the observed output is not equal to the expected output therefore the given design has bug.
   
 **BUG 1**
@@ -29,7 +29,7 @@ The following errors 👇 are seen.
 **Test Scenario 2**  
 - Test Inputs: inp30=0b01, sel=0b11110
 - Expected Output: out= 0b01
-- Observed Output in the DUT 0 (default case value ) is not equal to 0b01.  
+- Observed Output in the DUT = 0 (default case value ) is not equal to 0b01.  
   Since the observed output is not equal to the expected output therefore the given design has bug.
   
 **BUG 2**

@@ -117,3 +117,12 @@ The following errors 👇 were seen.
   Since the observed output is not equal to the expected output therefore the given design has bug.
   
 **BUG 1**  
+```
+SEQ_1:
+      begin
+        if(inp_bit == 1)
+          next_state = IDLE; => bug [ next state should be SEQ_1, in order to detect overlapping sequence ]
+        else
+          next_state = SEQ_10;
+      end
+```

@@ -7,7 +7,7 @@
 **Multiplexer**  
 In this given design we have a 31:1 multiplexer with 5 select lines. Each input & output lines are all a two bit bus signal.
 The assert statement is used to check whether the observed outut is same as the expected output or not.  
-The following errors 👇 are seen.
+The following errors 👇 were seen.
 
 ![bugs_mux](https://user-images.githubusercontent.com/68592620/182046801-56142189-f087-4744-9271-9bc77367fc8d.png)  
 
@@ -104,4 +104,16 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
 endmodule 
 ``` 
 ## Level 1 Design 2
-**1011 Overlapping Sequence Detector**
+**1011 Overlapping Sequence Detector**  
+In this design an overlapping 1011 sequence detector was modelled as an FSM. The modelling style used in the design is an example of Moore FSM, as the output is determined by the current state only. The assert statement is used to check whether the observed outut is same as the expected output or not.
+The following errors 👇 were seen.
+
+![bugs_1011](https://user-images.githubusercontent.com/68592620/182128763-280e332f-ba3d-46d2-a5f5-6a940aacc0e7.png)
+
+**Test Scenario 1**  
+- Test Inputs: input sequence = 0b11011
+- Expected Output: sequence seen = 0b00001
+- Observed Output in the DUT is = 0b00000
+  Since the observed output is not equal to the expected output therefore the given design has bug.
+  
+**BUG 1**  

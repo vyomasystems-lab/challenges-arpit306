@@ -183,3 +183,5 @@ with
           next_state = SEQ_10;
       end
 ```
+**DESIGN FIX**  
+This design has bugs due to incorrect next state assignments, in order to detect overlapping 1011 sequences. The correct state transition diagram for a 1011 overlapping sequence detector should be as follows 👇.  

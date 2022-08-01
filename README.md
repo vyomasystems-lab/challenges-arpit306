@@ -189,4 +189,15 @@ This design has bugs due to incorrect next state assignments, in order to detect
 ![FSM](https://user-images.githubusercontent.com/68592620/182138856-a808139b-8196-4874-b837-707cd0d20f7e.jpg)
 
 ## Level 2 Design  
-This design is a complex Bit Manipulation Co-Processor used in a complex microprocessor. This is basically a 32 bit ALU, that takes three 32 bit operands and takes a 32 bit instruction, according to which it generates a 33 bit output, out of which the LSB is the validity bit & the other 32 bits are the output of the operation defined by the instruction.
+This design is a complex Bit Manipulation Co-Processor used in a complex microprocessor. This is basically a 32 bit ALU, that takes three 32 bit operands and takes a 32 bit instruction, according to which it generates a 33 bit output, out of which the LSB is the validity bit & the other 32 bits are the output of the operation defined by the instruction. Here we were given the Instruction table, using which the instruction code can be generated to run test cases. Shown below 👇.  
+
+![ISR](https://user-images.githubusercontent.com/68592620/182141607-ba0ac425-7063-48fc-a9c6-aceb057fa38c.png)
+
+**TEST PROCEDURE**  
+There are 27 * unmarked instructions in the table above. I converted all those instructions to their correponding hex-codes. And ran tests for all those 27 instructions with the inputs shown below 👇  
+1.)    mav_putvalue_src1 = 0x7FFFFFFF                     2.)    mav_putvalue_src1 = (random 32 bit binary number)
+       mav_putvalue_src2 = 0x00000000                            mav_putvalue_src2 = (random 32 bit binary number)
+       mav_putvalue_src3 = 0x0446FF8B                            mav_putvalue_src3 = 0x0446FF8B
+       mav_putvalue_instr = (all 27 instructions one by one)     mav_putvalue_instr = (all 27 instructions one by one)  
+
+

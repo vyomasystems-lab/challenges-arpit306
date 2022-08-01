@@ -193,7 +193,7 @@ This design is a complex Bit Manipulation Co-Processor used in a complex micropr
 
 ![ISR](https://user-images.githubusercontent.com/68592620/182141607-ba0ac425-7063-48fc-a9c6-aceb057fa38c.png)
 
-**TEST PROCEDURE**  
+**TEST SCENARIO**  
 There are 27 * unmarked instructions in the table above. I converted all those instructions to their correponding hex-codes, assuming all the unspecified bits like rs2, rs3 etc... as 0. And ran tests for all those 27 instructions with the inputs shown below 👇  
 ```    
        # Test case 1

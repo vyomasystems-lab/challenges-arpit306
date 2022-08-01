@@ -365,4 +365,6 @@ assert dut.sum.value == 0b0111, f"output is incorrect: {dut.sum.value} != 0b0111
 ```
 The following error 👇 was seen.  
 
-![bugs_CLA](https://user-images.githubusercontent.com/68592620/182179565-88abadfd-4519-4fea-9a78-00beef2af628.png)
+![bugs_CLA](https://user-images.githubusercontent.com/68592620/182179565-88abadfd-4519-4fea-9a78-00beef2af628.png)  
+
+Thank-You 😊 !

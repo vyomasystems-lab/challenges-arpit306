@@ -162,7 +162,7 @@ To fix the bug replace ```next_state = IDLE;``` with ```next_state = SEQ_10;```
 ```
    SEQ_1011:
       begin
-        next_state = IDLE;    => bug [ next state should be SEQ_10, in order to detect overlapping sequence ]
+        next_state = IDLE;    => bug [ in order to detect overlapping sequence, the next state shoud be determined according to the input bits (0 or 1) ]
       end
 ```
 To fix the bug replace 

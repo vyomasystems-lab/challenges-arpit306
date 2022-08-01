@@ -1,4 +1,4 @@
-# CTB Hackathon 2022 - Arpit Sharma Report
+# CTB Hackathon 2022 - Arpit Sharma's Report
 ▫️ The verification environment is setup using Vyoma's UpTickPro provided for the hackathon.  
 ▫️ Gitpod screenshot 👇
 

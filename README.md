@@ -6,7 +6,7 @@
 ## Level 1 - Design 1  
 **Multiplexer**  
 In this given design we have a 31:1 multiplexer with 5 select lines. Each input & output lines are all a two bit bus signal.
-The assert statement is used to check whether the observed outut is same as the expected output or not.  
+The assert statement is used to check whether the observed output is same as the expected output or not.  
 The following errors 👇 were seen.
 
 ![bugs_mux](https://user-images.githubusercontent.com/68592620/182046801-56142189-f087-4744-9271-9bc77367fc8d.png)  
@@ -105,7 +105,7 @@ endmodule
 ``` 
 ## Level 1 Design 2
 **1011 Overlapping Sequence Detector**  
-In this design an overlapping 1011 sequence detector was modelled as an FSM. The modelling style used in the design is an example of Moore FSM, as the output is determined by the current state only. The assert statement is used to check whether the observed outut is same as the expected output or not.
+In this design an overlapping 1011 sequence detector was modelled as an FSM. The modelling style used in the design is an example of Moore FSM, as the output is determined by the current state only. The assert statement is used to check whether the observed output is same as the expected output or not.
 The following errors 👇 were seen.
 
 ![bugs_1011](https://user-images.githubusercontent.com/68592620/182128763-280e332f-ba3d-46d2-a5f5-6a940aacc0e7.png)
@@ -219,6 +219,7 @@ According tp the test reports, the code related to the instruction code **0x4000
 
 ## Level 3 Design  
 This design, which I have chosen is the design of a 5-Bit Carry Look-Ahead (CLA) Adder. Refer the Literature Survey Report for more information about the design. I have inserted bug in this design, mentioned below.  
+
 **INSERTED BUG**  
 ```
 module CLA(cout,sum,a,b,cin);
@@ -251,3 +252,21 @@ module CLA(cout,sum,a,b,cin);
          sum[3]=p[3]^c[3];
 endmodule
 ```
+**TEST SCENARIO**  
+In the code above, you can observe where the bug is inserted. The bug is inserted by replacing the xor operator with xnor operator as shown.  
+```p[2]=a[2]~^b[2], // ~^ instead of ^ ```  
+ ```
+    # Test case inputs
+    A=0b0101  
+    B=0b0010  
+    Carryin=0b0  
+```
+
+**TEST RESULTS**  
+The assert statement is used to check whether the observed output is same as the expected output or not.  
+```
+assert dut.sum.value == 0b0111, f"output is incorrect: {dut.sum.value} != 0b0111"  
+```
+The following error 👇 was seen.  
+
+![bugs_CLA](https://user-images.githubusercontent.com/68592620/182179565-88abadfd-4519-4fea-9a78-00beef2af628.png)

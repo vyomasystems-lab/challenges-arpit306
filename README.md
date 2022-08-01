@@ -311,6 +311,9 @@ According tp the test reports, the code related to the instruction code **0x4000
 
 ## ▫️ Level 3 Design  
 **[Carry Lookahead Adder]**  
+
+![CLA_literature_survey](https://user-images.githubusercontent.com/68592620/182201539-0f69bbbe-fef9-4595-950c-a50ff84443a2.jpg)
+
 This design, which I have chosen is the design of a 4-Bit Carry Look-Ahead (CLA) Adder. Please refer the Literature Survey Report for more information about the design. I have inserted bug in this design, mentioned below.  
 
 **INSERTED BUG**  

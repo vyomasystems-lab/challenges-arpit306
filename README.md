@@ -1,4 +1,16 @@
-# CTB Hackathon 2022 - Arpit Sharma's Report
+# CTB Hackathon 2022 - Final Report  
+
+This is the final hackathon report by Arpit Sharma, submitted for evaluation.
+
+## Table of contents  
+▫️[Abstract](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
+▫️[Level-1_Design-1](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
+▫️[Level-1_Design-2](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
+▫️[Level-2_Design](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)  
+▫️[Level-3_Design](https://github.com/vyomasystems-lab/challenges-arpit306/edit/master/README.md#abstract)
+## Abstract  
+
+▫️ This readme file presents the final report for the Capture The Bug CTB Design Verification Hackathon 2020.  
 ▫️ The verification environment is setup using Vyoma's UpTickPro provided for the hackathon.  
 ▫️ Gitpod screenshot 👇
 

@@ -185,3 +185,5 @@ with
 ```
 **DESIGN FIX**  
 This design has bugs due to incorrect next state assignments, in order to detect overlapping 1011 sequences. The correct state transition diagram for a 1011 overlapping sequence detector should be as follows 👇.  
+
+![FSM](https://user-images.githubusercontent.com/68592620/182138856-a808139b-8196-4874-b837-707cd0d20f7e.jpg)

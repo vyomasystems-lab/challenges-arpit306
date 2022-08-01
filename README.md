@@ -309,7 +309,7 @@ After running tests for 27 different instrutions, for two different set of input
 According tp the test reports, the code related to the instruction code **0x40007033** which corresponds to the instruction **ANDN contains the bug.** And it should be corrected by the designer, with the knowledge of the design.
 
 ## Level 3 Design  
-This design, which I have chosen is the design of a 5-Bit Carry Look-Ahead (CLA) Adder. Refer the Literature Survey Report for more information about the design. I have inserted bug in this design, mentioned below.  
+This design, which I have chosen is the design of a 4-Bit Carry Look-Ahead (CLA) Adder. Please refer the Literature Survey Report for more information about the design. I have inserted bug in this design, mentioned below.  
 
 **INSERTED BUG**  
 ```
@@ -354,7 +354,7 @@ In the code above, you can observe where the bug is inserted. The bug is inserte
 ```
 
 **TEST RESULTS**  
-The assert statement is used to check whether the observed output is same as the expected output or not.  
+The assert statement below is used to check whether the observed output is same as the expected output or not.  
 ```
 assert dut.sum.value == 0b0111, f"output is incorrect: {dut.sum.value} != 0b0111"  
 ```

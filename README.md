@@ -10,7 +10,7 @@ This is the final CTB Hackathon report submitted for final evaluation by **Arpit
 ▫️[Level-3_Design](https://github.com/vyomasystems-lab/challenges-arpit306#level-3-design)  
 ## ▫️ Abstract  
 
-▫️ This readme file presents the final report for the Capture The Bug CTB Design Verification Hackathon 2020.  
+▫️ This readme file presents the final report for the Capture The Bug CTB Design Verification Hackathon 2022.  
 ▫️ The verification environment is setup using Vyoma's UpTickPro provided for the hackathon.  
 ▫️ Gitpod screenshot 👇
 

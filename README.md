@@ -147,7 +147,31 @@ To fix the bug replace ```next_state = IDLE;``` with ```next_state = SEQ_1;```
 To fix the bug replace ```next_state = IDLE;``` with ```next_state = SEQ_10;```  
 
 **Test Scenario 3**  
-- Test Inputs: input sequence = 0b101011
-- Expected Output: sequence seen = 0b00001
-- Observed Output in the DUT is = 0b00000
-  Since the observed output is not equal to the expected output therefore the given design has bug.
+- Test Inputs: input sequence = 0b1011011
+- Expected Output: sequence seen = 0b0001001
+- Observed Output in the DUT is = 0b00010000
+  Since the observed output is not equal to the expected output therefore the given design has bug.  
+  
+**Test Scenario 4**  
+- Test Inputs: input sequence = 0b10111011
+- Expected Output: sequence seen = 0b00010001
+- Observed Output in the DUT is = 0b00010000
+  Since the observed output is not equal to the expected output therefore the given design has bug.  
+  
+**BUG 3 & 4**  
+```
+   SEQ_1011:
+      begin
+        next_state = IDLE;    => bug [ next state should be SEQ_10, in order to detect overlapping sequence ]
+      end
+```
+To fix the bug replace 
+```  
+    SEQ_1011:
+      begin
+        next_state = IDLE;
+      end
+``` 
+with 
+```
+next_state = SEQ_10;``` 

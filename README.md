@@ -356,6 +356,7 @@ In the code above, you can observe where the bug is inserted. The bug is inserte
     A=0b0101  
     B=0b0010  
     Carryin=0b0  
+    Expected output: Sum=0b111
 ```
 
 **TEST RESULTS**  

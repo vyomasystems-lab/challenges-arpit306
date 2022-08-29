@@ -307,7 +307,7 @@ After running tests for 27 different instrutions, for two different set of input
 ![bugs_alu](https://user-images.githubusercontent.com/68592620/182166406-bcad250b-5d89-4cda-8821-4ec8734c6533.png)
 
 **DESIGN FIX**  
-According tp the test reports, the code related to the instruction code **0x40007033** which corresponds to the instruction **ANDN contains the bug.** And it should be corrected by the designer, with the knowledge of the design.
+According to the test reports, the code related to the instruction code **0x40007033** which corresponds to the instruction **ANDN contains the bug.** And it should be corrected by the designer, with the knowledge of the design.
 
 ## ▫️ Level 3 Design  
 **[Carry Lookahead Adder]**  

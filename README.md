@@ -1,6 +1,7 @@
 # CTB Design Verification Hackathon 2022 - Final Report  
 
-This is the final CTB Hackathon report submitted for final evaluation by **Arpit Sharma.**
+This is the final CTB Hackathon report submitted for final evaluation by **Arpit Sharma.**  
+![certificate](https://user-images.githubusercontent.com/68592620/189901119-f6801453-eb91-4971-bc18-6eeb504446c2.jpeg)
 
 ## Table of contents  
 ▫️[Abstract](https://github.com/vyomasystems-lab/challenges-arpit306#abstract)  
